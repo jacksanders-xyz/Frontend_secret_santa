@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import logo1 from './christmas-present-christmas-tree-pngrepo-com.png';
+import SantaSection from './components/SantaSection.js';
+import FooterWords from './components/FooterWords.js';
+import logo2 from './snowman-snow-pngrepo-com.png';
+import ButtonsSection from './components/ButtonsSection'
 
-function App() {
+
+
+
+
+class App extends Component {
+ 
+
+  render() {  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <SantaSection />
+    <ButtonsSection /> 
+    <img className="christmas-tree" src={logo1} alt="logo" />
+    <img className="snowman" src={logo2} alt="logo" />
+    <FooterWords /> 
     </div>
   );
+ }
 }
 
 export default App;

@@ -1,9 +1,9 @@
-function IndexButtons() {
+function IndexButtons(props) {
 
   return (
     <div>
-    <button>create user</button>
-    <button>create group</button>
+      <button onClick={props.makeUserButtons}>create user</button>
+      <button onClick={props.makeGroupButtons}>create group</button>
     </div>
   )
 }
